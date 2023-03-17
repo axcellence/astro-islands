@@ -3,12 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Preact from '../components/Preact';
 import '../base.css';
+import Solid from '../components/Solid';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main class="container mx-auto my-10">
 		<div class="grid grid-cols-2 gap-8">
 			<Preact client:idle />
+			<Solid client:idle />
 		</div>
 	</main>
 </Layout>
